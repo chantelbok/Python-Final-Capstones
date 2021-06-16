@@ -12,8 +12,6 @@ def is_prime(x):
     if x % 2 == 0:  # all even number should return False
         return False
 
-    # step 2 indicates that the range will check odd numbers only,
-    # starting from 3 and stopping at the square root of the number being evaluated
     # since a composite number must have a factor less than the square root of that number
     for i in range(2, int(x//2)):
         if x % i == 0:

@@ -13,7 +13,7 @@ def is_prime(x):
         return False
 
     # since a composite number must have a factor less than the square root of that number
-    for i in range(2, int(x//2)):
+    for i in range(2, int(x**0.5)+1):  # initially used floor division x//2 to yield same results
         if x % i == 0:
             return False
 
